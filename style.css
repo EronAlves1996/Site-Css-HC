@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  color: #fce762;
+  font-size: 20px;
+}
+
+body{
+  background-image: linear-gradient(to right top, #201335, #5f2d52, #9e4f65, #d67b6f, #ffb17a);
+  height: 100vh;
+}
+
+header, ul{
+  display: flex;
+}
+
+header{
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid #FFF;
+}
+
+header ul li{
+  margin: 0 10px;
+}
+
+header ul li a{
+  transition: 300ms;
+}
+
+header ul li a:hover{
+  color: #4f4789;
+  text-decoration: underline;
+}
+
+ul{
+  list-style: none;
+  font-style: italic;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+  text-align: center;
+  margin-top: 100px;
+}
+
+.container .name h1{
+  font-size: 60px;
+}
+
+.container .name h5{
+  font-size: 25px;
+}
+
+#arrow{
+  font-size: 50px;
+  cursor: pointer;
+  animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink{
+  to{
+    visibility: hidden;
+  }
+}
+
+.rotate{
+  transform: rotate(180deg);
+  transition: 300ms;
+}
+
+#animation{
+  transition: 300ms;
+}
+
+#about p{
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form{
+  width: 40%;
+  margin: 0 auto;
+}
+
+.form input{
+  width: 50%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 3px 10px;
+  color: #4f4789;
+}
+
+.form button{
+  width: 15%;
+  background-color: #201335;
+  border: 0;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transition: 300ms;
+  margin-left: -6px;
+  margin-top: 20px;
+}
+
+.form button:hover{
+  color:#4F4789;
+  background-color: #FFFDED;
+  box-shadow: 1px 1px 5px #FFFDED;
+}
+
+.container-about{
+  display: none;
+}
+
+@media only screen and (max-width: 480px){
+  .container .name h1{
+    font-size: 40px;
+  }
+  
+  .container .name h5{
+    font-size: 20px;
+  }
+
+  #about p{
+    max-width: 80%;
+    margin: 0 auto;
+    font-size: 15px;
+    text-align: justify;
+  }
+  ul{
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1250px){
+  .form{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .form input{
+    font-size: 80%;
+  }
+  .form button{
+    font-size: 80%;
+    width: 20%;
+  }
+}

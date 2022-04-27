@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eron Alves</title>
+  <script src="https://kit.fontawesome.com/957d7117f2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <p>Eron Alves</p>
+    </div>
+    <ul>
+      <li><a target="_blank" href="https://github.com/TTTecnology">GitHub</a></li>
+      <li><a target="_blank" href="https://wa.me/31971732015">Whatsapp</a></li>
+      <li><a target="_blank" href="mailto:eron.alves@rocketmail.com">E-mail</a></li>
+      <li><a target="_blank" href="https://www.linkedin.com/in/eron-alves-343684107/">LinkedIn</a></li>
+    </ul>
+  </header>
+  <main>
+    <section class="container">
+      <div class="name">
+        <h1>Eron Alves</h1>
+        <h5>Web development Student</h5>
+      </div>
+      <div id="arrow">
+        <i onclick='displayAbout()' id="animation" class="fa-solid fa-arrow-down-long"></i>
+      </div>
+      <div class="container-about">
+        <div id="about">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit id quas aliquam minus quibusdam aut! 
+            Ratione, officiis repellendus aut sit nam a doloremque est obcaecati natus quia nisi veritatis deserunt.</p>
+        </div>
+        <div class="form">
+          <div>Deixe seu contato!</div>
+          <form action="">
+            <input type="text" placeholder="Seu melhor e-mail ;)">
+            <button>Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    function displayAbout(){
+      const arrow = document.getElementById('animation');
+      const about = document.querySelector('.container-about');
+      arrow.classList.toggle('rotate');
+      about.style.display = about.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
